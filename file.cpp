@@ -54,4 +54,23 @@ public:
         delete temp;
     }
 
+    // Peek/Top operation: Retrieve the value of the topmost
+    void peek()
+    {
+        if (isEmpty())
+        {
+            cout << "List is empty." << endl;
+        }
+        else
+        {
+            Node *temp = top;
+            while (current != NULL)
+            {
+                cout << current->data << " " << endl;
+                current = current->next;
+            }
+            cout << endl;
+        } // Return the value of the top node
+    }
+
     
